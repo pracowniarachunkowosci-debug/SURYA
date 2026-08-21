@@ -1,0 +1,158 @@
+/* Local composition for the architecture and design pillar page. */
+.architecture-page { overflow-x: clip; }
+.architecture-page > .section:not(.architecture-cycle):not(.architecture-investment):not(.architecture-final-cta) { padding-block: clamp(4rem, 5.5vw, 6.25rem); }
+.architecture-cycle, .architecture-investment { padding-block: clamp(5.25rem, 10.5vw, 9.5rem); }
+
+.architecture-models { background: var(--paper); }
+.architecture-heading { display: grid; grid-template-columns: .85fr 1.15fr; align-items: end; gap: clamp(3rem, 8vw, 7rem); margin-bottom: clamp(3rem, 5.5vw, 5rem); }
+.architecture-heading h2 { max-width: 700px; margin: 1.5rem 0 0; }
+.architecture-heading > p { max-width: 340px; margin: 0 0 .35rem; color: rgba(59, 46, 38, .68); font-size: .95rem; }
+.architecture-model-grid { display: grid; grid-template-columns: repeat(12, 1fr); border-top: 1px solid var(--line); }
+.architecture-model { display: flex; min-height: 250px; flex-direction: column; justify-content: space-between; padding: 1.2rem 1.5rem 1.45rem 0; border-bottom: 1px solid var(--line); }
+.architecture-model:nth-child(1) { grid-column: span 5; }
+.architecture-model:nth-child(2) { grid-column: span 4; padding-left: 1.5rem; border-left: 1px solid var(--line); }
+.architecture-model:nth-child(3) { grid-column: span 3; padding-left: 1.5rem; border-left: 1px solid var(--line); }
+.architecture-model:nth-child(4) { grid-column: 1 / -1; min-height: 165px; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.architecture-model-number { color: var(--terracotta); font-family: var(--mono); font-size: .7rem; }
+.architecture-model h3 { max-width: 370px; margin: auto 0 .8rem; font-family: var(--serif); font-size: clamp(1.7rem, 2.7vw, 3rem); font-weight: 500; letter-spacing: -.045em; line-height: .98; }
+.architecture-model:nth-child(4) h3 { font-size: clamp(1.8rem, 3vw, 3.25rem); }
+.architecture-model p { max-width: 330px; margin: 0; color: rgba(59, 46, 38, .67); font-size: .87rem; line-height: 1.5; }
+.architecture-model-list { display: flex; flex-wrap: wrap; gap: .35rem .75rem; margin: 1.2rem 0 0; padding: 0; list-style: none; color: var(--sage-deep); font-family: var(--mono); font-size: .62rem; letter-spacing: .03em; text-transform: uppercase; }
+.architecture-model-list li::before { content: '—'; margin-right: .38rem; color: var(--terracotta); }
+
+.architecture-cycle { background: var(--espresso); color: var(--ivory); }
+.architecture-cycle-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(3rem, 10vw, 9rem); }
+.architecture-cycle .eyebrow { color: var(--sand); }
+.architecture-cycle h2 { max-width: 570px; margin: 1.5rem 0 1.6rem; color: var(--ivory); }
+.architecture-cycle-intro p { max-width: 440px; color: rgba(246, 242, 234, .7); font-size: .98rem; }
+.architecture-cycle-list { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; padding: 0; border-top: 1px solid var(--line-dark); list-style: none; }
+.architecture-cycle-item { min-height: 130px; padding: 1rem 1rem 1.1rem 0; border-bottom: 1px solid var(--line-dark); color: var(--sand); font-family: var(--serif); font-size: 1.25rem; }
+.architecture-cycle-item:nth-child(even) { padding-left: 1rem; border-left: 1px solid var(--line-dark); }
+.architecture-cycle-item small { display: block; margin-bottom: 2.4rem; color: var(--terracotta); font-family: var(--mono); font-size: .65rem; }
+
+.architecture-interiors { background: var(--ivory); }
+.architecture-interiors-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(3rem, 8vw, 7rem); }
+.architecture-interiors h2 { max-width: 510px; margin: 1.5rem 0 0; }
+.architecture-interiors-copy { max-width: 340px; margin-top: 1.8rem; color: rgba(59, 46, 38, .68); font-size: .94rem; }
+.architecture-interiors-list { margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.architecture-interiors-item { display: grid; grid-template-columns: 70px 1fr; gap: 1.5rem; padding: 1.4rem 0; border-bottom: 1px solid var(--line); }
+.architecture-interiors-item > small { color: var(--terracotta); font-family: var(--mono); font-size: .68rem; }
+.architecture-interiors-item h3 { margin: 0 0 .55rem; font-family: var(--serif); font-size: clamp(1.35rem, 2vw, 2rem); font-weight: 500; letter-spacing: -.03em; }
+.architecture-interiors-item p { max-width: 510px; margin: 0; color: rgba(59, 46, 38, .68); font-size: .9rem; }
+
+.architecture-team { background: var(--sage); }
+.architecture-team h2 { max-width: 620px; margin: 1.5rem 0 0; }
+.architecture-team-copy { max-width: 450px; margin: 1.5rem 0 0; color: rgba(59, 46, 38, .72); font-size: .95rem; }
+.architecture-team-list { display: grid; grid-template-columns: repeat(4, 1fr); margin: 4rem 0 0; padding: 0; border-top: 1px solid rgba(59, 46, 38, .3); list-style: none; }
+.architecture-team-item { min-height: 180px; padding: 1.2rem 1.2rem 1.25rem 0; border-right: 1px solid rgba(59, 46, 38, .3); border-bottom: 1px solid rgba(59, 46, 38, .3); }
+.architecture-team-item + .architecture-team-item { padding-left: 1.2rem; }
+.architecture-team-item:last-child { border-right: 0; }
+.architecture-team-item small { display: block; margin-bottom: 3.5rem; color: var(--graphite); font-family: var(--mono); font-size: .65rem; }
+.architecture-team-item strong { display: block; font-family: var(--serif); font-size: 1.45rem; font-weight: 500; }
+
+.architecture-tools { background: var(--paper); }
+.architecture-tools-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(3rem, 8vw, 7rem); }
+.architecture-tools h2 { max-width: 520px; margin: 1.5rem 0 0; }
+.architecture-tools-copy { max-width: 350px; margin-top: 1.8rem; color: rgba(59, 46, 38, .68); font-size: .94rem; }
+.architecture-tools-list { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.architecture-tools-item { min-height: 112px; padding: .9rem 1rem 1rem 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.2rem; }
+.architecture-tools-item:nth-child(even) { padding-left: 1rem; border-left: 1px solid var(--line); }
+.architecture-tools-item small { display: block; margin-bottom: 1.7rem; color: var(--terracotta); font-family: var(--mono); font-size: .65rem; }
+
+.architecture-foreign { background: var(--sand); }
+.architecture-foreign h2 { max-width: 760px; margin: 1.5rem 0 0; }
+.architecture-foreign-copy { max-width: 530px; margin: 1.5rem 0 0; color: rgba(59, 46, 38, .7); font-size: .98rem; }
+.architecture-foreign-list { display: grid; grid-template-columns: repeat(3, 1fr); margin: 4rem 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.architecture-foreign-item { min-height: 150px; padding: 1.2rem 1.25rem 1.25rem 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.architecture-foreign-item + .architecture-foreign-item { padding-left: 1.25rem; }
+.architecture-foreign-item:last-child { border-right: 0; }
+.architecture-foreign-item small { display: block; margin-bottom: 2.8rem; color: var(--terracotta); font-family: var(--mono); font-size: .65rem; }
+.architecture-foreign-item strong { display: block; font-family: var(--serif); font-size: 1.45rem; font-weight: 500; }
+.architecture-foreign-item p { max-width: 240px; margin: .5rem 0 0; color: rgba(59, 46, 38, .68); font-size: .85rem; }
+
+.architecture-investment { background: var(--espresso); color: var(--ivory); }
+.architecture-investment .eyebrow { color: var(--sand); }
+.architecture-investment-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(3rem, 8vw, 7rem); }
+.architecture-investment h2 { max-width: 520px; margin: 1.5rem 0 1.6rem; color: var(--ivory); }
+.architecture-investment-intro p { max-width: 430px; color: rgba(246, 242, 234, .7); font-size: .97rem; }
+.architecture-investment-note { max-width: 420px; margin-top: 2rem; color: var(--sand); font-family: var(--serif); font-size: 1.4rem; line-height: 1.15; }
+.architecture-investment-steps { margin: 0; padding: 0; border-top: 1px solid var(--line-dark); list-style: none; }
+.architecture-investment-step { display: grid; grid-template-columns: 70px 1fr; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line-dark); }
+.architecture-investment-step small { color: var(--terracotta); font-family: var(--mono); font-size: .68rem; }
+.architecture-investment-step h3 { margin: 0 0 .5rem; color: var(--sand); font-family: var(--serif); font-size: 1.6rem; font-weight: 500; }
+.architecture-investment-step p { max-width: 500px; margin: 0; color: rgba(246, 242, 234, .67); font-size: .88rem; }
+
+.architecture-scope { background: var(--ivory); }
+.architecture-scope-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(3rem, 8vw, 7rem); }
+.architecture-scope h2 { max-width: 540px; margin: 1.5rem 0 0; }
+.architecture-scope-copy { max-width: 390px; margin: 1.6rem 0 0; color: rgba(59, 46, 38, .68); font-size: .93rem; }
+.architecture-scope-list { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.architecture-scope-item { padding: 1.1rem 1rem 1.1rem 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.3rem; }
+.architecture-scope-item:nth-child(even) { padding-left: 1rem; border-left: 1px solid var(--line); }
+.architecture-scope-item::before { content: '↗'; display: inline-block; margin-right: .55rem; color: var(--terracotta); font-family: var(--sans); font-size: .9rem; }
+
+.architecture-scope-creep { background: var(--paper); }
+.architecture-scope-creep-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(3rem, 10vw, 9rem); align-items: end; }
+.architecture-scope-creep h2 { max-width: 480px; margin: 1.5rem 0 0; }
+.architecture-scope-creep p { max-width: 540px; margin: 0; color: rgba(59, 46, 38, .7); font-size: 1rem; }
+
+.architecture-summary { background: var(--sand); }
+.architecture-summary h2 { max-width: 650px; margin: 1.5rem 0 0; }
+.architecture-summary-list { display: grid; grid-template-columns: repeat(4, 1fr); margin: 4rem 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
+.architecture-summary-item { min-height: 145px; padding: 1.2rem 1.1rem 1.25rem 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.2rem; }
+.architecture-summary-item + .architecture-summary-item { padding-left: 1.1rem; }
+.architecture-summary-item:nth-child(4n) { border-right: 0; }
+.architecture-summary-item small { display: block; margin-bottom: 2.8rem; color: var(--terracotta); font-family: var(--mono); font-size: .65rem; }
+
+.architecture-moments { background: var(--paper); }
+.architecture-moments h2 { max-width: 720px; margin: 1.5rem 0 0; }
+.architecture-moments-grid { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: 3.75rem; border-top: 1px solid var(--line); }
+.architecture-moment { min-height: 160px; padding: 1.2rem 1.5rem 1.3rem 0; border-bottom: 1px solid var(--line); }
+.architecture-moment:nth-child(even) { padding-left: 1.5rem; border-left: 1px solid var(--line); }
+.architecture-moment small { display: block; margin-bottom: 2.7rem; color: var(--terracotta); font-family: var(--mono); font-size: .65rem; }
+.architecture-moment h3 { margin: 0 0 .5rem; font-family: var(--serif); font-size: 1.55rem; font-weight: 500; }
+.architecture-moment p { max-width: 450px; margin: 0; color: rgba(59, 46, 38, .68); font-size: .87rem; }
+
+.architecture-faq { background: var(--ivory); }
+.architecture-faq h2 { max-width: 540px; }
+.architecture-final-cta h2 { max-width: 800px; }
+.architecture-final-cta p { max-width: 420px; margin: 1.5rem 0 1.6rem; color: rgba(246, 242, 234, .78); }
+
+@media (max-width: 850px) {
+  .architecture-heading, .architecture-cycle-grid, .architecture-interiors-grid, .architecture-tools-grid, .architecture-investment-grid, .architecture-scope-grid, .architecture-scope-creep-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .architecture-model-grid { grid-template-columns: repeat(2, 1fr); }
+  .architecture-model, .architecture-model:nth-child(n) { grid-column: auto; min-height: 225px; padding-left: 0; }
+  .architecture-model:nth-child(1) { grid-column: 1 / -1; }
+  .architecture-model:nth-child(2), .architecture-model:nth-child(3) { padding-left: 1.25rem; }
+  .architecture-model:nth-child(2) { border-left: 0; border-right: 1px solid var(--line); }
+  .architecture-model:nth-child(3) { border-left: 0; border-right: 0; }
+  .architecture-model:nth-child(4) { grid-column: 1 / -1; min-height: 180px; padding-top: 1.2rem; }
+  .architecture-team-list { grid-template-columns: repeat(2, 1fr); }
+  .architecture-team-item:nth-child(2) { border-right: 0; }
+  .architecture-team-item:nth-child(n+3) { border-top: 1px solid rgba(59, 46, 38, .3); }
+  .architecture-foreign-list { grid-template-columns: repeat(2, 1fr); }
+  .architecture-foreign-item:nth-child(2) { border-right: 0; }
+  .architecture-foreign-item:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .architecture-summary-list { grid-template-columns: repeat(2, 1fr); }
+  .architecture-summary-item:nth-child(4n) { border-right: 1px solid var(--line); }
+  .architecture-summary-item:nth-child(2n) { border-right: 0; }
+  .architecture-summary-item:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+@media (max-width: 560px) {
+  .architecture-model-grid, .architecture-cycle-list, .architecture-tools-list, .architecture-scope-list, .architecture-moments-grid { grid-template-columns: 1fr; }
+  .architecture-model, .architecture-model:nth-child(n), .architecture-model:nth-child(2), .architecture-model:nth-child(3), .architecture-model:nth-child(4) { min-height: auto; padding: 1.35rem 0 1.5rem; border-left: 0; border-right: 0; }
+  .architecture-model h3 { margin-top: 2.75rem; }
+  .architecture-model:nth-child(4) { padding-top: 1.35rem; }
+  .architecture-cycle-item, .architecture-cycle-item:nth-child(even) { padding: 1rem 0; border-left: 0; }
+  .architecture-interiors-item { grid-template-columns: 45px 1fr; gap: .8rem; padding-block: 1.2rem; }
+  .architecture-team-list, .architecture-foreign-list, .architecture-summary-list { grid-template-columns: 1fr; }
+  .architecture-team-item, .architecture-team-item + .architecture-team-item, .architecture-foreign-item, .architecture-foreign-item + .architecture-foreign-item, .architecture-summary-item, .architecture-summary-item + .architecture-summary-item { min-height: auto; padding: 1.1rem 0 1.3rem; border-left: 0; border-right: 0; }
+  .architecture-team-item small, .architecture-foreign-item small, .architecture-summary-item small { margin-bottom: 1.6rem; }
+  .architecture-team-item:nth-child(n+3), .architecture-foreign-item:nth-child(n+3), .architecture-summary-item:nth-child(n+3) { border-top: 0; }
+  .architecture-tools-item, .architecture-tools-item:nth-child(even) { min-height: auto; padding: .75rem 0; border-left: 0; }
+  .architecture-investment-step { grid-template-columns: 45px 1fr; gap: .8rem; }
+  .architecture-scope-item, .architecture-scope-item:nth-child(even) { padding: .7rem 0; border-left: 0; }
+  .architecture-moment, .architecture-moment:nth-child(even) { min-height: auto; padding: 1rem 0 1.15rem; border-left: 0; }
+  .architecture-moment small { margin-bottom: 1.6rem; }
+}
